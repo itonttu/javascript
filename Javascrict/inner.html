@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>任意の場所に文字を表示</title>
+    <script>
+        function show_html(){
+            if(document.getElementById){
+                document.getElementById("url").innerHTML='<a href="confirm.html" target="_blank">トップページ</a>';
+            }
+        }
+    </script>
+</head>
+<body>
+    <span id="url">
+        <a href="javascript:show_html();">ここをクリックするとリンクが表示されます</a>
+
+    </span>
+</body>
+</html>

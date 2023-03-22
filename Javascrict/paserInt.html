@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奇数と偶数</title>
+    <script>
+        function check(){
+            var num = parseInt(document.forms[0].text1.value);
+            if(num % 2 == 0){
+                alert(num + "は偶数です。");//偶数の処理
+            }
+            else {
+                alert(num + "は奇数です。");//奇数の処理
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- <form action=""></form> -->
+    <form action="#" >
+        <input type="text" name="text1" value="">
+        <input type="button" value="判別" onclick="check();">
+    </form>
+</body>
+</html>

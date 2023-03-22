@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirmを使う</title>
+</head>
+<body>
+    <h1>confirmを使う</h1>
+    <script>
+        var flg=confirm("背景の色を変えてもいいですか？")
+
+        if(flg==true){
+            document.bgColor="green";
+        }else{
+            document.bgColor="red";
+        }
+    </script>
+</body>
+</html>

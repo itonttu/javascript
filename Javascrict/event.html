@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function kakunin(btnNo){
+            if(btnNo==1){
+                var link="Yahoo!Japan";
+                var href="http://www.yahoo.co.jp/";
+            }else{
+                var link="Google";
+                var href="http://www.google.co.jp/";
+            }
+            ret=confirm(link+"へ飛びます。よろしいですか？");
+            if(ret==true){
+                location.href=href
+            }
+        }
+        </script>
+        <title>Javascript テスト</title>
+</head>
+<body>
+    <p>
+        <form name="test">
+            <input type="button" name="yahoo" value="Yahoo!Japanへ"onClick="kakunin(1)">
+            <input type="button" name="google" value="Googleへ"onClick="kakunin(2)">
+        </form>
+    </p>
+</body>
+</html>
